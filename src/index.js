@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Radium,  { StyleRoot } from 'radium'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+
+ReactDOM.render(<StyleRoot><App/></StyleRoot>,
   document.getElementById('root')
 );
 
